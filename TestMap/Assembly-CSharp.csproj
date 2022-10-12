@@ -36,18 +36,20 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
-     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Enemy_Sideway.cs" />
+     <Compile Include="Assets\Scripts\Character\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
      <Compile Include="Assets\Assets\Free Asset - 2D Handcrafted Art\Scripts\CamerController.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\DestroyMe.cs" />
-     <Compile Include="Assets\Scripts\BoomDamage_flip.cs" />
-     <Compile Include="Assets\Scripts\EnemyMove.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\FireBallHit.cs" />
-     <Compile Include="Assets\Scripts\BoomDamage.cs" />
-     <Compile Include="Assets\Scripts\Wood.cs" />
-     <Compile Include="Assets\Scripts\EnemyDamage.cs" />
+     <Compile Include="Assets\Scripts\Character\DestroyMe.cs" />
+     <Compile Include="Assets\Scripts\Enemy\BoomDamage_flip.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyMove.cs" />
+     <Compile Include="Assets\Scripts\Character\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Character\FireBallHit.cs" />
+     <Compile Include="Assets\Scripts\Enemy\BoomDamage.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Wood.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyDamage.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Enemy_Straightedge.cs" />
      <Compile Include="Assets\Scripts\ProjectTileController.cs" />
      <None Include="Assets\Assets\Dragon Warrior Files\Read Me.txt" />
      <None Include="Assets\Assets\Free Asset - 2D Handcrafted Art\Shader\NormalMappedSprite-Animated.shader" />
@@ -298,25 +300,25 @@
         <HintPath>E:\Project_Thay_Tung\Lab\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
-        <HintPath>E:\Project_Thay_Tung\Baitap\TestMap\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.Unsafe.dll</HintPath>
+        <HintPath>E:\Project_Thay_Tung\GitPush\Final\TestMap\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb">
-        <HintPath>E:\Project_Thay_Tung\Baitap\TestMap\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+        <HintPath>E:\Project_Thay_Tung\GitPush\Final\TestMap\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Pdb">
-        <HintPath>E:\Project_Thay_Tung\Baitap\TestMap\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+        <HintPath>E:\Project_Thay_Tung\GitPush\Final\TestMap\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil">
-        <HintPath>E:\Project_Thay_Tung\Baitap\TestMap\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+        <HintPath>E:\Project_Thay_Tung\GitPush\Final\TestMap\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
-        <HintPath>E:\Project_Thay_Tung\Baitap\TestMap\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+        <HintPath>E:\Project_Thay_Tung\GitPush\Final\TestMap\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>E:\Project_Thay_Tung\Baitap\TestMap\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+        <HintPath>E:\Project_Thay_Tung\GitPush\Final\TestMap\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>E:\Project_Thay_Tung\Baitap\TestMap\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+        <HintPath>E:\Project_Thay_Tung\GitPush\Final\TestMap\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>E:\Project_Thay_Tung\Lab\2021.3.8f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
