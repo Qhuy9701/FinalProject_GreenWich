@@ -377,11 +377,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Assets/Free Asset - 2D Handcrafted Art/Scripts/CamerController.cs"
-"Assets/Scripts/CameraFollow.cs"
+"Assets/Scripts/Camera/CameraFollow.cs"
 "Assets/Scripts/Character/DestroyMe.cs"
 "Assets/Scripts/Character/FireBallHit.cs"
 "Assets/Scripts/Character/PlayerController.cs"
 "Assets/Scripts/Character/PlayerHealth.cs"
+"Assets/Scripts/Character/ProjectTileController.cs"
 "Assets/Scripts/Enemy/BoomDamage.cs"
 "Assets/Scripts/Enemy/BoomDamage_flip.cs"
 "Assets/Scripts/Enemy/EnemyDamage.cs"
@@ -390,7 +391,8 @@
 "Assets/Scripts/Enemy/Enemy_Sideway.cs"
 "Assets/Scripts/Enemy/Enemy_Straightedge.cs"
 "Assets/Scripts/Enemy/Wood.cs"
-"Assets/Scripts/ProjectTileController.cs"
+"Assets/Scripts/Health/HeartPickUp.cs"
+"Assets/Scripts/Map/VerticalPlatform.cs"
 -langversion:9.0
 
 /deterministic

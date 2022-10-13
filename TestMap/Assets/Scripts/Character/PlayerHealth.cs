@@ -40,7 +40,15 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
-    
+    public void addHeal(float healAmount)
+    {
+        currentHealth += healAmount;
+        if(currentHealth > maxhealth)
+        {
+            currentHealth = maxhealth;
+        }
+        playerhealthSlider.value = currentHealth;
+    } 
 
 
     public void makeDead()

@@ -8,7 +8,11 @@ public class EnemyHealth : MonoBehaviour
 
     public float maxhealth;
     float currentHealth;
+    public GameObject enemyHealthEF;
     public Slider enemyhealthSlider;
+    public bool drop;
+
+    public GameObject theDrop;
 
     // Start is called before the first frame update
     void Start()
@@ -48,7 +52,10 @@ public class EnemyHealth : MonoBehaviour
 
     public void makeDead()
     {
-        Destroy(gameObject);
-       
+        gameObject.SetActive(false);
+        Instantiate(enemyHealthEF, transform.position, transform.rotation);
+        {
+            Instantiate(theDrop, transform.position, transform.rotation);
+        }
     }
 }
