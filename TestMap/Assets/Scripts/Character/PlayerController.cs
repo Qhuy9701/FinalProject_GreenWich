@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     public GameObject bullet;
     float fireRate = 0.5f;
     float nextFire = 0;
+    
 
     private void Start()
     {
@@ -47,54 +48,14 @@ public class PlayerController : MonoBehaviour
         {
             Flip();
         }
-
-        //create jump character
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            rb.AddForce(new Vector2(0, jumpForce));  
-            anim.SetInteger("Status", 2);      
-        } 
-        //---------------------------------------------------------------------------------//     
-        else if(Input.GetKey(KeyCode.Space))
-        {
-            if(isGrounded)
-            {
-                isGrounded = false;
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-                anim.SetInteger("Status", 1);
-            }              
-        }
-        //---------------------------------------------------------------------------------//  
-        else if(Input.GetKey(KeyCode.UpArrow))
-        {
-            if(isGrounded)
-            {
-                isGrounded = false;
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-                anim.SetInteger("Status", 1);
-            } 
-        }
-        //---------------------------------------------------------------------------------//    
-        else if (Input.GetKey(KeyCode.W))
+        ///-----------------------------------------------------------------------------------------------------///
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             fireBullet();
-            anim.SetInteger("Status", 3);   
-           
+            anim.SetTrigger("Skill");
         }
-        //---------------------------------------------------------------------------------// 
-        else if (Input.GetKey(KeyCode.E))
-        {
-            anim.SetInteger("Status", 4);   
-           
-        }
-        //---------------------------------------------------------------------------------// 
-  
-        else
-        {
-           anim.SetInteger("Status", 0);
-
-        }
-
+        ///-----------------------------------------------------------------------------------------------------///
+        ///-----------------------------------------------------------------------------------------------------///
         anim.SetFloat("Speed", Mathf.Abs(move));
     }
 
@@ -102,17 +63,32 @@ public class PlayerController : MonoBehaviour
     {
         if (isGrounded == true)
         {
-            extraJumps = extraJumpValue;
+            extraJumps = extraJumpValue;         
         }
+        ///-----------------------------------------------------------------------------------------------------///
         if(Input.GetKeyDown(KeyCode.Space) && extraJumps >0)
         {
             rb.velocity = Vector2.up * jumpForce;
             extraJumps--;
+            anim.SetTrigger("Jump");
         }
         else if(Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGrounded == true)
         {
             rb.velocity = Vector2.up * jumpForce;
-        }
+            anim.SetTrigger("Jump");
+        }  
+        ///-----------------------------------------------------------------------------------------------------///
+        // if(Input.GetKeyDown(KeyCode.UpArrow) && extraJumps >0)
+        // {
+        //     rb.velocity = Vector2.up * jumpForce;
+        //     extraJumps--;
+        //     anim.SetTrigger("Jump");
+        // }
+        // else if(Input.GetKeyDown(KeyCode.UpArrow) && extraJumps == 0 && isGrounded == true)
+        // {
+        //     rb.velocity = Vector2.up * jumpForce;
+        //     anim.SetTrigger("Jump");
+        // }    
     }
     void Flip()
     {
@@ -142,16 +118,17 @@ public class PlayerController : MonoBehaviour
             if (FacingRight)
             {
                 Instantiate(bullet, gunTip.position, Quaternion.Euler(new Vector3(0, 0, 0)));
-                
+                anim.SetTrigger("Skill");
             }
             else
             {
                 Instantiate(bullet, gunTip.position, Quaternion.Euler(new Vector3(0, 0, 180f)));
+                anim.SetTrigger("Skill");
             }
                     
         }
     }     
-
+    
     //The character will flash if it collides with an obstacle.
     private void OnTriggerEnter2D(Collider2D other)
     {
