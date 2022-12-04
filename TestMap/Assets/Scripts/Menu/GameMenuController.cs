@@ -6,7 +6,7 @@ public class GameMenuController : MonoBehaviour
 {
     public void PlayGameButton()
     {
-        Application.LoadLevel("Map1");
+        Application.LoadLevel("MainScene");
     }
 
     public void ExitGameButton()
@@ -16,6 +16,11 @@ public class GameMenuController : MonoBehaviour
 
     public void SettingButton()
     {
-        Application.LoadLevel("Setting");
+        Application.LoadLevel("HowToPlayScene");
+    }
+
+    public void PlotButton()
+    {
+        Application.LoadLevel("PlotScene");
     }
 }

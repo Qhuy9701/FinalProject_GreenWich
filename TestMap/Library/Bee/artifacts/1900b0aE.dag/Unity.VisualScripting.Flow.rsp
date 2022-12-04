@@ -101,6 +101,7 @@
 -define:NETSTANDARD
 -define:NETSTANDARD2_1
 -define:ENABLE_PROFILER
+-define:UNITY_SERVER
 -define:DEBUG
 -define:TRACE
 -define:UNITY_ASSERTIONS
@@ -125,11 +126,11 @@
 -define:MODULE_PARTICLE_SYSTEM_EXISTS
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll"
--r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll"
--r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll"
--r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll"
--r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.Unsafe.dll"
+-r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll"
+-r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll"
+-r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll"
+-r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll"
+-r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.Unsafe.dll"
 -r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.collab-proxy@1.17.1/Lib/Editor/PlasticSCM/log4netPlastic.dll"
 -r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.collab-proxy@1.17.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
 -r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.collab-proxy@1.17.1/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"

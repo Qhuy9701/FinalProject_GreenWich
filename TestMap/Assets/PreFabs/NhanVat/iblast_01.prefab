@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f7f2eeafdf3c746a49cfab666c7bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireBalldamage: 10
+  FireBalldamage: 1
 --- !u!114 &9130300334257909831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c3a838572e98946b36f381f866d202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireBallSpeed: 10
+  fireBallSpeed: 25
 --- !u!114 &9130300334257909828
 MonoBehaviour:
   m_ObjectHideFlags: 0

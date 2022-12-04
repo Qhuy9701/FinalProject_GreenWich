@@ -9,8 +9,10 @@ TagManager:
   - CheckPoint
   - Ground
   - Checkpoint
-  - StartPos
   - DeadZone
+  - StartPosition
+  - BoardNoti
+  - Limit
   layers:
   - Default
   - TransparentFX

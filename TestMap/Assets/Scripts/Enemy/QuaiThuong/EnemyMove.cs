@@ -12,7 +12,7 @@ public class EnemyMove : MonoBehaviour
     // Start is called before the first frame update
     public  GameObject enemyGraphic;
     bool facingRight = true;
-    float facingTime = 2f;
+    public float facingTime = 1f;
     float nextFlip = 0f;
     bool canFlip = true;
 
@@ -62,7 +62,13 @@ public class EnemyMove : MonoBehaviour
             //TRIGGER WALK
            
             canFlip = false;
-        }       
+        }     
+
+        //if tag = limit then turn around and move in the opposite direction
+        if (other.tag == "Limit")
+        {
+            flip();
+        }  
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -96,10 +102,10 @@ public class EnemyMove : MonoBehaviour
             if (enemyGraphic != null)
             {
                 enemyGraphic.GetComponent<Animator>().SetBool("Run", false);
-            }
-            
+            }         
         }
     }
+
     void flip(){
         if(!canFlip)      
         return;       

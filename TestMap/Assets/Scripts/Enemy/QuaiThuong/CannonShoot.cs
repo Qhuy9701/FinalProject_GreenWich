@@ -9,12 +9,8 @@ public class CannonShoot : MonoBehaviour
     public float shootTime;
     float nextShoot = 0f;
 
-    Animator cannonAim ;
-
     void Awake()
     {
-      cannonAim = GetComponent<Animator>();
-
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -23,7 +19,6 @@ public class CannonShoot : MonoBehaviour
         {
             nextShoot = Time.time + shootTime;
             Instantiate(theBoom, shootForm.position,Quaternion.identity);
-            cannonAim.SetTrigger("Shoot");
         }
         
     }

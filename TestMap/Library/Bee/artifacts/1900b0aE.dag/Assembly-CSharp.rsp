@@ -101,6 +101,7 @@
 -define:NETSTANDARD
 -define:NETSTANDARD2_1
 -define:ENABLE_PROFILER
+-define:UNITY_SERVER
 -define:DEBUG
 -define:TRACE
 -define:UNITY_ASSERTIONS
@@ -120,11 +121,11 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll"
--r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll"
--r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll"
--r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll"
--r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.Unsafe.dll"
+-r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll"
+-r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll"
+-r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll"
+-r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll"
+-r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.Unsafe.dll"
 -r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
 -r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"E:/Project_Thay_Tung/Lab/2021.3.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -337,6 +338,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/CFXREditor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/CFXRRuntime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/KinoBloom.Runtime.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/PPv2URPConverters.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/PsdPlugin.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/ToonyColorsPro.Demo.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Animation.Editor.ref.dll"
@@ -362,10 +364,20 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Mathematics.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Mathematics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipeline.Universal.ShaderLibrary.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Core.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Core.Runtime.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Core.ShaderLibrary.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Universal.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Universal.Runtime.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Universal.Shaders.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Searcher.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Analytics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.ShaderGraph.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.ref.dll"
@@ -393,7 +405,8 @@
 "Assets/Assets/Effect/JMO Assets/Cartoon FX (legacy)/Scripts/CFX_LightFlicker.cs"
 "Assets/Assets/Effect/JMO Assets/Cartoon FX (legacy)/Scripts/CFX_LightIntensityFade.cs"
 "Assets/Assets/MapAssets/Free Asset - 2D Handcrafted Art/Scripts/CamerController.cs"
-"Assets/PreFabs/Sound/SoundManager.cs"
+"Assets/BossFinal.cs"
+"Assets/BossFinal2.cs"
 "Assets/Scripts/Camera/CameraController.cs"
 "Assets/Scripts/Character/Controller/PlayerController.cs"
 "Assets/Scripts/Character/FireBall/DestroyMe.cs"
@@ -408,6 +421,7 @@
 "Assets/Scripts/Enemy/Movement of obstacles/RockMoveRightLeft.cs"
 "Assets/Scripts/Enemy/Movement of obstacles/RockMoveUpDown.cs"
 "Assets/Scripts/Enemy/QuaiThuong/BoomController.cs"
+"Assets/Scripts/Enemy/QuaiThuong/BossMove.cs"
 "Assets/Scripts/Enemy/QuaiThuong/CannonShoot.cs"
 "Assets/Scripts/Enemy/QuaiThuong/EnemyHealth.cs"
 "Assets/Scripts/Enemy/QuaiThuong/EnemyMove.cs"
@@ -416,12 +430,14 @@
 "Assets/Scripts/Enemy/QuaiThuong/GobinShoot.cs"
 "Assets/Scripts/Enemy/QuaiThuong/LuoiDao/Flip.cs"
 "Assets/Scripts/Enemy/QuaiThuong/LuoiDao/Roll.cs"
+"Assets/Scripts/Enemy/Wood/NewWood.cs"
 "Assets/Scripts/Enemy/Wood/Wood.cs"
 "Assets/Scripts/Map/CheckPoint/Finish.cs"
 "Assets/Scripts/Map/CheckPoint/LoadLevel.cs"
 "Assets/Scripts/Map/CheckPoint/PlayerRespawn.cs"
 "Assets/Scripts/Map/VatLy/VerticalPlatform.cs"
 "Assets/Scripts/Menu/GameMenuController.cs"
+"Assets/Scripts/SoundManager.cs"
 "Assets/WeaponsController.cs"
 -langversion:9.0
 

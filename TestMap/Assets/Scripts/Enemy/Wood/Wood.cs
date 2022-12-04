@@ -13,7 +13,6 @@ public class Wood : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
     //If the player touches it, it will fall down
     private void OnCollisionEnter2D(Collision2D collision)
@@ -23,4 +22,14 @@ public class Wood : MonoBehaviour
             GetComponent<Rigidbody2D>().isKinematic = false;
         }
     }
+
+    //deadzone = destroy object
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "DeadZone")
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }

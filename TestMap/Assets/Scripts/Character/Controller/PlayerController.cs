@@ -64,13 +64,10 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         PlayerHealth playerHealth = GetComponent<PlayerHealth>();
         PlayerMana playerMana = GetComponent<PlayerMana>();
-        respawnPoint = transform.position;
-        //Don't destroy the player
-        DontDestroyOnLoad(gameObject);
-        //don
+        transform.position = GameObject.FindGameObjectWithTag("StartPosition").transform.position;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         DoubleJump();
         Move();
@@ -139,7 +136,6 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Q) && playerMana.currentMana < 10)
             {
                 anim.SetTrigger("Jump");
-                Debug.Log("Not enough mana");
             }
         }
     }
@@ -151,8 +147,7 @@ public class PlayerController : MonoBehaviour
             if (FacingRight)
             {
                 Instantiate(bullet, gunTip.position, Quaternion.Euler(new Vector3(0, 0, 0)));
-                anim.SetTrigger("Skill");
-                
+                anim.SetTrigger("Skill");      
             }
             else
             {
@@ -208,6 +203,7 @@ public class PlayerController : MonoBehaviour
                 //add mana = max mana
                 playerMana.Mana();
                 transform.position = respawnPoint;
+                //load scene
             }
         }
         else if(other.tag == "Checkpoint")
@@ -223,6 +219,11 @@ public class PlayerController : MonoBehaviour
             playerMana.Mana();
             //load scene
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        if(other.tag == "Finish")
+        {
+            SceneManager.LoadScene("MainScene");
         }
     }
 }

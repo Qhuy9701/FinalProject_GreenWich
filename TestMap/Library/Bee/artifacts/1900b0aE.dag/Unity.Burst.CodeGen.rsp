@@ -98,6 +98,7 @@
 -define:NET_4_6
 -define:NET_UNITY_4_8
 -define:ENABLE_PROFILER
+-define:UNITY_SERVER
 -define:DEBUG
 -define:TRACE
 -define:UNITY_ASSERTIONS
@@ -117,9 +118,9 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll"
--r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll"
--r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll"
+-r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll"
+-r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll"
+-r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll"
 -r:"E:/Project_Thay_Tung/GitPush/Final/TestMap/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
 -r:"E:/Project_Thay_Tung/Lab/2021.3.8f1/Editor/Data/Managed/Unity.CompilationPipeline.Common.dll"
 -r:"E:/Project_Thay_Tung/Lab/2021.3.8f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
@@ -333,10 +334,11 @@
 -r:"E:/Project_Thay_Tung/Lab/2021.3.8f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
 -r:"E:/Project_Thay_Tung/Lab/2021.3.8f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Linq.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.ref.dll"
-"Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/AssemblyLoader.cs"
-"Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/BurstILPostProcessor.cs"
-"Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/FunctionPointerInvokeTransform.cs"
-"Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/ILPostProcessing.cs"
+"Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/AssemblyResolver.cs"
+"Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/BurstILPostProcessor.cs"
+"Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/CecilExtensions.cs"
+"Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/FunctionPointerInvokeTransform.cs"
+"Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.CodeGen/ILPostProcessing.cs"
 -langversion:9.0
 /unsafe+
 /deterministic

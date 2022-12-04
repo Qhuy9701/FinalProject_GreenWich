@@ -33,9 +33,11 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {      
         currentHealth -= damage;
+        StartCoroutine(Flash());  
         if(currentHealth <= 0)
         {
             currentHealth = 0;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         playerHealthSlider.value = currentHealth;      
     }
@@ -49,4 +51,15 @@ public class PlayerHealth : MonoBehaviour
         }
         playerHealthSlider.value = currentHealth;
     } 
+
+    IEnumerator Flash()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            GetComponent<Renderer>().enabled = false;
+            yield return new WaitForSeconds(0.1f);
+            GetComponent<Renderer>().enabled = true;
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
 }
