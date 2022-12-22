@@ -62,7 +62,9 @@ public class EnemyMove : MonoBehaviour
             //TRIGGER WALK
            
             canFlip = false;
-        }     
+        }   
+
+       
 
         //if tag = limit then turn around and move in the opposite direction
         if (other.tag == "Limit")
@@ -70,6 +72,9 @@ public class EnemyMove : MonoBehaviour
             flip();
         }  
     }
+
+    //circle collider
+    
 
     void OnTriggerStay2D(Collider2D other)
     {

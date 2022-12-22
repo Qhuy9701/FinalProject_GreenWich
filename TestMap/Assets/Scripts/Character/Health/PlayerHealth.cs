@@ -27,7 +27,6 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxhealth;
         playerHealthSlider.maxValue = maxhealth;
         playerHealthSlider.value = maxhealth;
-        
     }
 
     public void TakeDamage(float damage)

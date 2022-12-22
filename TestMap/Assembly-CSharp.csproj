@@ -55,6 +55,7 @@
      <Compile Include="Assets\RsMonster.cs" />
      <Compile Include="Assets\Scripts\Enemy\QuaiThuong\Enemy_Straightedge.cs" />
      <Compile Include="Assets\Scripts\SoundManager.cs" />
+     <Compile Include="Assets\spawnmonster.cs" />
      <Compile Include="Assets\Assets\Effect\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_New.cs" />
      <Compile Include="Assets\Assets\Effect\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightFlicker.cs" />
      <Compile Include="Assets\Scripts\Map\CheckPoint\LoadLevel.cs" />
@@ -73,15 +74,18 @@
      <Compile Include="Assets\Scripts\Enemy\QuaiThuong\EnemyMove.cs" />
      <Compile Include="Assets\Scripts\Menu\LevelUnlock\LevelScripts.cs" />
      <Compile Include="Assets\Scripts\Menu\GameMenuController.cs" />
+     <Compile Include="Assets\coin.cs" />
      <Compile Include="Assets\Scripts\Map\CheckPoint\Finish.cs" />
      <Compile Include="Assets\BossFinal2.cs" />
      <Compile Include="Assets\Scripts\Character\Controller\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Test\MonsterTest.cs" />
      <Compile Include="Assets\Assets\Effect\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
      <Compile Include="Assets\Scripts\Character\FireBall\FireBallHit.cs" />
      <Compile Include="Assets\Scripts\Enemy\Wood\Wood.cs" />
      <Compile Include="Assets\Scripts\Menu\BackMainScene.cs" />
      <Compile Include="Assets\Scripts\Enemy\QuaiThuong\EnemyMoveCung.cs" />
      <Compile Include="Assets\WeaponsController.cs" />
+     <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Enemy\QuaiThuong\BoomController.cs" />
      <Compile Include="Assets\Assets\Effect\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_Translate.cs" />
      <Compile Include="Assets\Scripts\Menu\LevelUnlock\LevelManager.cs" />

@@ -697,6 +697,12 @@ MonoBehaviour:
   attackRange: 2.23
   damage: 1
   playerMana: {fileID: 4835499444050561676}
+  playerHealth: {fileID: 0}
+  jumpsound: {fileID: 0}
+  attacksound: {fileID: 0}
+  deathsound: {fileID: 0}
+  hurtsound: {fileID: 0}
+  shootSound: {fileID: 0}
 --- !u!114 &4835499444050561667
 MonoBehaviour:
   m_ObjectHideFlags: 0

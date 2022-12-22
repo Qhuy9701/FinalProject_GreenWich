@@ -404,6 +404,7 @@
 "Assets/Assets/MapAssets/Free Asset - 2D Handcrafted Art/Scripts/CamerController.cs"
 "Assets/BossFinal.cs"
 "Assets/BossFinal2.cs"
+"Assets/coin.cs"
 "Assets/RsMonster.cs"
 "Assets/Scripts/Camera/CameraController.cs"
 "Assets/Scripts/Character/Controller/PlayerController.cs"
@@ -439,7 +440,10 @@
 "Assets/Scripts/Menu/GameMenuController.cs"
 "Assets/Scripts/Menu/LevelUnlock/LevelManager.cs"
 "Assets/Scripts/Menu/LevelUnlock/LevelScripts.cs"
+"Assets/Scripts/Menu/PauseMenu.cs"
 "Assets/Scripts/SoundManager.cs"
+"Assets/Scripts/Test/MonsterTest.cs"
+"Assets/spawnmonster.cs"
 "Assets/WeaponsController.cs"
 -langversion:9.0
 

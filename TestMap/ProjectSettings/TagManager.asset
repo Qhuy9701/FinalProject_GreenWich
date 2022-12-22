@@ -13,6 +13,8 @@ TagManager:
   - StartPosition
   - BoardNoti
   - Limit
+  - spawnMonster
+  - FireBall
   layers:
   - Default
   - TransparentFX
